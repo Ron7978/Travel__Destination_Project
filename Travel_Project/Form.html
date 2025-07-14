@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking_Form</title>
+    <style>
+        body  {
+            background-image: url("https://www.shutterstock.com/shutterstock/videos/1106941715/thumb/1.jpg?ip=x480");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h1{
+            text-align: center;
+            color: #0000FF;
+            font-size:calc(1.5em + 1vw);
+        }
+
+        form{
+            text-align: center;
+            font-size:calc(1em + 0.5vw);
+            border: calc(0.01em + 0.1vw) solid black;
+            border-radius: 15px;
+            padding: 10px;
+            margin-left: 36%;
+            margin-right: 36%;
+        }
+
+        input{
+            margin-left: 4px;
+            margin-right: 4px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        label{
+            margin-left: 2px;
+            margin-right: 4px;
+            cursor: pointer;
+        }
+
+        #sub{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please schedule your trip</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input id="username" type="text" placeholder="Enter username" name="username" required/>
+        <br><br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Enter password" name="password" required/>
+        <br><br>
+        <input id="sub" type="submit" value="Submit"/>
+    </form>
+    
+</body>
+</html>

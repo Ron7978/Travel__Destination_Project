@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking_Form</title>
+    <style>
+        body  {
+            background-image: url("https://www.shutterstock.com/shutterstock/videos/1106941715/thumb/1.jpg?ip=x480");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h1{
+            text-align: center;
+            color: #0000FF;
+            font-size:calc(1.5em + 1vw);
+        }
+
+        form{
+            font-size:calc(1em + 0.5vw);
+            border: calc(0.01em + 0.1vw) solid black;
+            border-radius: 15px;
+            padding: 5px;
+            margin-left: 15%;
+            margin-right: 15%;
+            #sub{
+                margin-left: 40%;
+                margin-right: 40%;
+            }
+        }
+
+        input{
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        label{
+            cursor: pointer;
+        }
+
+        #sub{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #sub:hover{
+            background-color: #35823a;
+        }
+
+        #reset{
+            background-color: #f44336;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #reset:hover{
+            background-color: #a52a2a;
+        }
+
+        #travelers{
+            width: 30px;
+        }
+
+        #days{
+            width: 30px;
+        }
+
+        fieldset{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        legend{
+            font-size:calc(1em + 0.5vw);
+            font-weight: bold;
+        }
+
+        textarea{
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        select{
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        #terms{
+            cursor: pointer;
+        }
+
+        #terms:hover{
+            color: blue;
+        }
+
+        #terms a{
+            text-decoration: none;
+            color: black;
+        }
+
+        #terms a:hover{
+            color: blue;
+        }
+
+        #upArrow {
+            position: fixed;
+            bottom: 48px;
+            right: 28px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 2px;
+            border-radius: 30px;
+            width: 38px;
+            height: 38px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">Schedule Your Holiday on Paradise Island!</h1>
+    <form>
+        <fieldset>
+            <legend><b>Personal Details:</b></legend>
+            <!--Input Fields-->
+            <label for="name">Full Name:</label>
+            <input id="name" type="text" placeholder="Enter Full_Name" name="name" required />
+            <br><br>
+            <label for="mail">Email:</label>
+            <input id="mail" type="email" placeholder="abc@gmail.com" name="mail" required />
+            <br><br>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" placeholder="+91-8697792315" name="phone" required />
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input id="dob" type="date" name="dob" required />
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Trip Details:</b></legend>
+            <!--Input Fields-->
+            <label for="arr">Arrival Date:</label>
+            <input id="arr" type="datetime-local" name="arrival" required />
+            <br><br>
+            <label for="dep">Departure Date:</label>
+            <input id="dep" type="datetime-local" name="departure" required />
+            <br><br>
+            <label for="travelers">No. of travelers:</label>
+            <input id="travelers" type="number" name="traveler" required />
+            <br><br>
+            <label for="days">No. of Days:</label>
+            <input id="days" type="number" name="days" required />
+            <br><br>
+            <!--Select Dropdown-->     
+            <label for="residence">Residence Type:</label>
+            <select id="residence" name="residence" required>
+                <option value="hotel">Hotel</option>
+                <optgroup label="Hotel Ratings">
+                    <option value="3-star">3-Star</option>
+                    <option value="4-star">4-Star</option>
+                    <option value="5-star">5-Star</option>
+                </optgroup>
+                <option value="resort">Resort</option>
+                <option value="guesthouse">Guest House</option>
+            </select>
+            <br><br>
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            <br><br>
+            <label for="meal">Meal Plan:</label>
+            <select id="meal" name="meal" required>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="all">All</option>
+            </select>
+            <br><br>
+            <fieldset>
+                <legend><b>Preferred Activities:</b></legend>
+                <p>(<em>Checked Once are Complementary in the Package</em>)</p>
+                <!--Checkboxes-->
+                <input id="Snorkeling" type="checkbox" name="activity" value="Snorkeling" />
+                <label for="Snorkeling">Snorkeling</label>
+                <input id="JetSki" type="checkbox" name="activity" value="JetSki" />
+                <label for="JetSki">Jet Ski</label>
+                <input id="paragliding" type="checkbox" name="activity" value="paragliding" />
+                <label for="paragliding">Paragliding</label>
+                <br>
+                <input id="BananaBoat" type="checkbox" name="activity" value="BananaBoat" checked />
+                <label for="BananaBoat">Banana Boat</label>
+                <input id="Surfing" type="checkbox" name="activity" value="Surfing" />
+                <label for="Surfing">Surfing</label>
+                <input id="scuba" type="checkbox" name="activity" value="scuba" checked />
+                <label for="scuba">Scuba Diving</label>
+            </fieldset>
+            <br>
+            <!--Radio Button-->
+            <p><b>Preferred Mode of Transport:</b></p>
+            <input id="car" type="radio" name="transport" value="car" required />
+            <label for="car">Car</label>
+            <input id="bus" type="radio" name="transport" value="bus" />
+            <label for="bus">Bus</label>
+            <input id="ferry" type="radio" name="transport" value="ferry" />
+            <label for="ferry">Ferry</label>
+            <br>
+            <p><b>Baby on Board?</b></p>
+            <input id="yes" type="radio" name="baby" value="yes" required />
+            <label for="yes">Yes</label>
+            <input id="no" type="radio" name="baby" value="no" />
+            <label for="no">No</label>
+            <br>
+            <p><b>Pets ?</b></p>
+            <input id="yes" type="radio" name="pet" value="yes" required />
+            <label for="yes">Yes</label>
+            <input id="no" type="radio" name="pet" value="no" />
+            <label for="no">No</label>
+            <br>
+            <p><b>Special Request:</b></p>
+            <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter Your Comments"></textarea>
+        </fieldset>
+        <br><br>
+        <input id="terms" type="checkbox" name="terms" required/>
+        <label for="terms">I agree to the Terms and Conditions <a href="../MultiMedia/T&C.webp">T&C</a></label>
+        <br><br>
+        <!--Button / input tag-->
+        <input id="sub" type="submit" value="Submit"/> 
+        <input id="reset" type="reset" value="Reset"/>
+        <button><img src="../MultiMedia/UpArrow.png" width="30" height="30" alt="upArrow" ></button>
+    </form>
+    <!-- Up Arrow -->
+    <a href="#top">
+        <img id="upArrow" src="../MultiMedia/UpArrow.png" alt="Move to Top">
+    </a>
+    
+</body>
+</html>

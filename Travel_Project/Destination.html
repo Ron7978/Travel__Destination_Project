@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Overview</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Responsive.css">
+    <style>
+        #top {
+            font-size:calc(1.5em + 1.5vw);
+        }
+
+        #tsr {
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        body  {
+            background-image: url("https://www.shutterstock.com/shutterstock/videos/1106941715/thumb/1.jpg?ip=x480");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        #pic {
+            width: 20%;
+            height: 20%;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 15px;
+            border: solid 2px black;
+        }
+
+        audio {
+            margin-top: -5px;
+            border-radius: solid 5px black;
+        }
+
+        video {
+            margin-left: 10px;
+            border: solid 2px black;
+            border-radius: 5px;
+        }
+
+        iframe {
+            margin-left: 10px;
+            border: solid 2px black;
+            border-radius: 5px;
+        }
+
+        #hyper {
+            font-size:calc(1em + 1vw);
+        }
+
+        a {
+            font-size: calc(0.7em + 0.5vw);
+            margin-left: 4px;
+            margin-right: 8px;
+        }
+
+        #tab {
+            font-size: calc(0.7em + 0.6vw);
+        }
+
+        hr {
+            color: #000;
+        }
+
+        #upArrow {
+            position: fixed;
+            bottom: 56px;
+            right: 28px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 2px;
+            border-radius: 30px;
+            width: 38px;
+            height: 38px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="header" style="text-align: center;"> -->
+    <header>
+        <h1 id="top">Welcome to Paradise Island!</h1>
+        <nav>
+            <a href="Expenses.html" target="_blank">Expenses Details</a> | &nbsp;&nbsp;
+            <a href="BookingForm.html" target="_blank">Book Your Holiday</a> &nbsp;&nbsp;
+        </nav>
+    
+        <!-- Hyperlink -->
+        <p id="tab">For more information, visit the official <a href="AboutPage.html" target="_blank">Paradise Island
+                website.</a></p>
+    
+        <!-- teaser image -->
+        <img id="tsr" src="../MultiMedia/Main_Teaser.jpg" title="Main Teaser Image of Paradise Island" alt="Teaser Img">
+    
+    
+        <p id="hyper"><em>Moving through the page</em></p>
+
+        <!-- Navigation Links -->
+        <nav>
+            <a href="#act">Activities</a> | &nbsp;&nbsp;
+            <a href="#attract">Nearby Attractions</a> | &nbsp;&nbsp;
+            <a href="#rest">Restaurants</a> | &nbsp;&nbsp;
+            <a href="#trvl">Travel Tips</a> | &nbsp;&nbsp;
+            <a href="#vdo">Overview</a> | &nbsp;&nbsp;
+            <a href="#map">Location</a> &nbsp;&nbsp;
+        </nav>
+        <!-- </div> -->      
+    </header>>
+
+    <!-- h2 -->
+    <div>
+        <h2>Destination Overview</h2>
+    
+    
+    
+        <img id="pic"
+            src="https://s3.eu-west-2.amazonaws.com/tripspell/EXPERIENCE/paradise-beach-pondicherry/description/1_high"
+            title="Beaches of Paradise Island" alt="Beach Img">
+    
+        <!-- <img src="MultiMedia/Beach_Pic.jpg"   // Absolute Path examples
+        title="Beaches of Fun Island"
+        alt="Beach Img"
+        style="height: 30%; width: 30%;"> -->
+    
+        <!-- Relative Path examples -->
+    
+        <img id="pic" src="../MultiMedia/Beach_Pic.jpg" title="Beaches of Fun Island" alt="Beach Img"
+            style="height: 24%; width: 24%;">
+    
+    </div>
+
+    <!-- Audio -->
+    <main>
+        <div>
+            <br />
+            <h2>Welcome Audio</h2>
+            <audio controls src="../MultiMedia/paradise-island-96456.mp3" type="audio/mp3">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+    
+            <p><em>Paradise Island</em> is an island in the Bahamas formerly known as <strong>Hog Island</strong>. The
+                island,
+                with an area of <b>277 hectares (685 acres) (2.8 km2/1.1 sq mi)</b>,
+                is located just off the shore of the city of Nassau,
+                which is itself located on the northern edge of the island of <b>New Providence</b>.
+            </p>
+            <p>It is best known for the <i>sprawling resort Atlantis</i> with its extensive water park rides, pools, beach,
+                restaurants, walk-in aquarium and casinos.
+                <em>Paradise Island</em> is connected to the island of <b>New Providence</b> by two bridges that cross
+                <em>Nassau Harbour</em>.
+                The first was built in 1966 by Resorts International, and the second in the late 1990s.
+            </p>
+    
+            <p>Paradise Island is home to the <b>One&Only Ocean Club</b>, a luxury resort owned and operated by the
+                <em>One&Only
+                    Resorts</em> brand within the <em>Kerzner International</em>.
+                The <em>Atlantis Paradise Island</em> resort, which also includes the <em>Marina Village</em> shopping and
+                dining area, opened in 1998.
+            </p>
+    
+            <p>The Coral Towers were built atop two parking garages. The <em>Beach Tower</em> is the original hotel building
+                built on the site of the <em>Paradise Beach Hotel</em> which was destroyed by a hurricane in 1991.
+            </p>
+        </div>
+    
+        <div>
+            <h2 id="act">Activities in Paradise Island</h2>
+    
+            <ul>
+                <li><b>Snorkeling</b> in the vibrant coral reefs</li>
+                <li><b>Relaxing</b> on pristine white-sand beaches</li>
+                <li><b>Exploring</b> the island's tropical rain-forests</li>
+                <li><b>Participating</b> in water sports such as kayaking and paddle boarding</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h2 id="attract">Nearby Attractions</h2>
+    
+            <ol>
+                <li><b>Visit</b> the historic <em>Paradise Temple</em></li>
+                <li><b>Take</b> a boat tour to the secluded <em>Turtle Bay</em></li>
+                <li><b>Explore</b> the local markets and sample tropical fruits</li>
+                <li><b>Hike</b> to the breathtaking <em>Paradise Viewpoint</em></li>
+            </ol>
+        </div>
+    
+        <div>
+            <h2 id="rest">Recommended Restaurants</h2>
+    
+            <ul>
+                <li><b>SeaFood Heaven</b></li>
+                <ul>
+                    <li>Fresh catch of the day</li>
+                    <li>Oceanfront dining experience</li>
+                </ul>
+    
+                <li><b>Tropical Bites</b></li>
+                <ul>
+                    <li>Local and international cuisine</li>
+                    <li>Outdoor sitting with panoramic view</li>
+                </ul>
+    
+                <li><b>Island Grill</b></li>
+                <ul>
+                    <li>Grilled specialties with island flavours</li>
+                    <li>Lively atmosphere with live music and entertainment</li>
+                </ul>
+            </ul>
+        </div>
+    
+        <div>
+            <h2 id="trvl">Travel Tips</h2>
+            <dl>
+                <dt><b>Best Time to Visit</b></dt>
+                <dd>Year-round, but peak season is during the dry months from June to September.</dd>
+                <dd>Consider visiting during weekdays for fewer crowds.</dd>
+    
+                <br />
+    
+                <dt><b>Currency</b></dt>
+                <dd>Local currency is <em>Paradise Dollars (PD)</em>.</dd>
+                <dd>Major credit cards are widely accepted.</dd>
+    
+                <br />
+    
+                <dt><b>Language</b></dt>
+                <dd>English and <em>Paradisean Creole</em> are widely spoken.</dd>
+                <dd>Learn a few local phrases to enhance your interaction with locals.</dd>
+    
+                <br />
+    
+                <dt><b>Local Cuisine</b></dt>
+                <dd>Indulge in the rich flavors of Paradise Island's local cuisine, featuring a fusion of seafood, tropical
+                    fruits, and aromatic spices.</dd>
+                <dd>Try the traditional dish called "Island Delight" for a true taste of local flavors.</dd>
+    
+                <br />
+    
+                <dt><b>Weather Conditions</b></dt>
+                <dd>While the weather is generally sunny, occasional tropical showers can occur. It's advisable to carry a
+                    light
+                    raincoat or umbrella.</dd>
+                <dd>Check the weather forecast before planning outdoor activities.</dd>
+            </dl>
+        </div>
+    </main>
+    <!-- Up Arrow -->
+    <a href="#top">
+        <img id="upArrow" src="../MultiMedia/UpArrow.png" alt="Move to Top">
+    </a>
+
+    <!-- horizontal line -->
+    <hr />
+    <!-- h2 -->
+    <div>
+        <h2 id="vdo">How does Paradise Island look</h2>
+        <!-- Video -->
+        <video width="600" height="300" controls>
+            <source src="../MultiMedia/istockphoto-2152001695-640_adpp_is.mp4" type="video/mp4">
+            <p>Your browser does not support the video tag.</p>
+        </video>
+    </div>
+    <!-- h2 -->
+    <div>
+        <h2 id="map">Location of Paradise Island</h2>
+        <!-- Map -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7910.258500881952!2d-77.32733675106063!3d25.080259502105182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7db93cb9b50b%3A0x4f27a6bcae38f950!2sParadise%20Island!5e0!3m2!1sen!2sin!4v1741670664956!5m2!1sen!2sin"
+            width="600" height="450" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <div>
+        <p>
+            <em>
+                Whether you seek <u><b>Adventure or</b> <b>Relaxation</b>,
+                    <strong>Paradise Island</strong> </u>offers an unforgettable experience
+                for every traveler. Plan your escape to this tropical haven today!
+            </em>
+        </p>
+    </div>
+
+    <hr />
+
+    <footer>
+        <p>&copy; 2023, All rights reserved &nbsp;&nbsp; | &nbsp;&nbsp;
+            <a href="mailto: rb3099@srmist.edu.in">Contact Us</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+            <a href="tel:9073623299">Call Us</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+        </p>
+    </footer>
+
+    
+
+
+</body>
+
+</html>

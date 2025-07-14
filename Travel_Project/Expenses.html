@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Table</title>
+    <style>
+        #top {
+            text-align: justify;
+            font-size:calc(1.2em + 1.1vw);
+        }
+        body  {
+            background-image: url("https://www.shutterstock.com/shutterstock/videos/1106941715/thumb/1.jpg?ip=x480");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #tbl {
+            margin-left: 8px;
+            margin-right: 8px;
+            border-collapse: collapse;
+            width: 80%;
+            border: 3px solid black;
+            text-align: center;
+            font-size:calc(1em + 0.5vw);
+            background-color: #f2f2f2;
+            #total {
+                font-size:calc(0.8em + 0.8vw);
+            }
+        }
+        #txt {
+            text-align: justify;
+            font-size:calc(0.5em + 0.5vw);
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top"><u>Expense Table</u>:</h1>
+    <table id="tbl" border="1">
+        <caption><b>Expenses throughout the week</b></caption>
+        <br>
+        <thead>
+            <tr>
+                <th rowspan="2">Category</th>
+                <th colspan="2">Cost Details</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>
+                <th>Item</th>
+                <th>Cost Per Day</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Accommodation</td>
+                <td>Hotel</td>
+                <td>$ 150 / day</td>
+                <td rowspan="3">$1,750</td>
+            </tr>
+            <tr>
+                <td>Resorts</td>
+                <td>$ 200 / day</td>
+            </tr>
+            <tr>
+                <td>Guest House</td>
+                <td>$ 100 / day</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Meals</td>
+                <td>Restaurants</td>
+                <td>$ 40 / day</td>
+                <td rowspan="2">$ 420</td>
+            </tr>
+            <tr>
+                <td>Street Food</td>
+                <td>$ 20 / day</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Transport</td>
+                <td>Car Rental</td>
+                <td>$ 50 / day</td>
+                <td rowspan="2">$ 350</td>
+            </tr>
+            <tr>
+                <td>Public Transport</td>
+                <td>$ 10 / day</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Activities</td>
+                <td>Water Sports</td>
+                <td>$ 30 / day</td>
+                <td rowspan="4">$ 280</td>
+            </tr>
+            <tr>
+                <td>Guide Tour</td>
+                <td>$ 25 / day</td>
+            </tr>
+            <tr>
+                <td>Hiking</td>
+                <td>$ 15 / day</td>
+            </tr>
+            <tr>
+                <td>BonFire</td>
+                <td>$ 20 / day</td>
+            </tr>
+            <tr>
+                <td>Others</td>
+                <td>Relaxation</td>
+                <td>$ 20 / day</td>
+                <td>$ 115</td>
+            </tr>
+            <tr>
+                <td colspan="">Miscellaneous Expenses</td>
+                <td>Shopping</td>
+                <td>$ 15 / day</td>
+                <td rowspan="">$ 105</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr id="total">
+                <td colspan="3"> Grand Total</td>
+                <td>$ 3,020</td>    
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+
+    <hr>
+
+    <p id="txt"><b>Note: The above table is a rough estimate of the expenses that you might incur during your stay at Paradise Island. 
+        The actual expenses may vary depending on the choices you make, </b><a href="AboutPage.html" target="_blank">visit the about page for choices</a></p> 
+       
+</body>
+</html>
